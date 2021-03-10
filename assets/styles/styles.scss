@@ -369,6 +369,9 @@ main{
 
   .features {
     position: relative; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
     background-color: var(--warm-black);
     color: var(--gray-features); 
     font-family: "DM Sans", sans-serif;
