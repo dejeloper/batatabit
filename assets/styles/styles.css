@@ -11,6 +11,7 @@
   --just-white: #fff;
   --shadow-btn: #59491e29;
   --gray-text: #757575;
+  --gray-features: #808080;
 }
 
 * {
@@ -281,5 +282,210 @@ main .exchange-tables .table-currency-date span {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.936rem;
+}
+
+main .exchange-tables .table-commissions {
+  margin: 0 auto;
+  height: 360px;
+  min-width: 235px;
+  max-width: 500px;
+  width: 70%;
+  font-family: 'Inter', sans-serif;
+}
+
+main .exchange-tables .table-commissions-title {
+  display: -ms-grid;
+  display: grid;
+  color: var(--secondary-blue);
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.344rem;
+  margin-bottom: 12px;
+  min-width: 230px;
+  max-width: 300px;
+  width: 90%;
+}
+
+main .exchange-tables .table-commissions-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 100px 95px;
+      grid-template-columns: 100px 95px;
+  -ms-grid-rows: (39px)[4];
+      grid-template-rows: repeat(4, 39px);
+  margin: 0 auto;
+  min-width: 230px;
+  max-width: 300px;
+  width: 90%;
+  justify-content: center;
+}
+
+main .exchange-tables .table-commissions-container div {
+  background-color: var(--just-white);
+}
+
+main .exchange-tables .table-commissions-container div.table-currency-top-left {
+  border-radius: 15px 0 0 0;
+}
+
+main .exchange-tables .table-commissions-container div.table-currency-top-right {
+  border-radius: 0 15px 0 0;
+}
+
+main .exchange-tables .table-commissions-container div.table-currency-bottom-left {
+  border-radius: 0 0 0 15px;
+}
+
+main .exchange-tables .table-commissions-container div.table-currency-bottom-right {
+  border-radius: 0 0 15px 0;
+}
+
+main .exchange-tables .table-commissions-container div h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #b5b0ac;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.936rem;
+  padding: 10px 12px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+main .exchange-tables .table-commissions-container div h5 {
+  color: var(--gray-text);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.694rem;
+  padding: 11px 12px;
+}
+
+main .exchange-tables .table-commissions-date {
+  background-color: var(--soft-blue);
+  color: var(--warm-black);
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.452rem;
+  margin: 16px auto;
+  padding: 8px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 8px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .exchange-tables .table-commissions-date span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.936rem;
+}
+
+main .features {
+  position: relative;
+  background-color: var(--warm-black);
+  color: var(--gray-features);
+  font-family: "DM Sans", sans-serif;
+  padding: 64px 16px;
+  height: auto;
+  width: 100%;
+  min-width: 320px;
+}
+
+main .features span.logo {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: calc(0% - 15px);
+  left: calc(50% - 20px);
+  background-image: url("../icons/batata.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .features-title {
+  text-align: center;
+}
+
+main .features-title h2 {
+  color: var(--just-white);
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+main .features-title p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+main .features-cards {
+  width: 100%;
+  min-width: 288px;
+  max-width: 400px;
+}
+
+main .features-cards .card {
+  background: var(--black);
+  margin: 16px;
+  padding: 16px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 8px #00000029;
+          box-shadow: 0px 4px 8px #00000029;
+}
+
+main .features-cards .card span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .features-cards .card span.clock {
+  background-image: url("../icons/clock.svg");
+}
+
+main .features-cards .card span.eye {
+  background-image: url("../icons/eye.svg");
+}
+
+main .features-cards .card span.dollar {
+  background-image: url("../icons/dollar-sign.svg");
+}
+
+main .features-cards .card span.check {
+  background-image: url("../icons/check-circle.svg");
+}
+
+main .features-cards .card-title {
+  color: var(--just-white);
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+}
+
+main .features-cards .card-content {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 6px;
 }
 /*# sourceMappingURL=styles.css.map */
