@@ -644,3 +644,39 @@ main{
   }
   
 }
+
+footer {
+  display: flex;
+  background: var(--bitcoin-orange);
+  color: var(--just-white);
+  width: 100%;
+  height: 150px;
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    &.left ul {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem; 
+
+      li {
+        list-style: none;
+        margin: 8px auto;
+
+        a {
+          color: var(--just-white);
+          text-decoration: none;
+          
+        }
+
+      }
+
+    }
+
+  }
+   
+}
