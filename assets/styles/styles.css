@@ -559,9 +559,7 @@ main .plans-content {
 }
 
 main .plans-content .slider {
-  width: 70%;
-  min-width: 190px;
-  max-width: 300px;
+  margin: 50px auto 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,8 +567,13 @@ main .plans-content .slider {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
   height: 250px;
-  margin: 50px 0 64px;
 }
 
 main .plans-content .plans-content-slider {

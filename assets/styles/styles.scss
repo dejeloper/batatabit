@@ -524,21 +524,21 @@ main{
 
     }
     
-    &-content {
-      // height: 316px;
+    &-content { 
       overflow-x: scroll; 
       overscroll-behavior-x: contain;
       scroll-snap-type: x proximity;
       margin:0px 10px;
       
       .slider {
+        margin: 50px auto 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         width: 70%;
         min-width: 190px;
         max-width: 300px;
-        display: flex;
-        flex-direction: row;
         height: 250px; 
-        margin: 50px 0 64px;
       }
       
       .plans-content-slider {
